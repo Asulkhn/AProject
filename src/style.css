@@ -28,6 +28,10 @@
     border-radius: 20%;
 }
 
+.bigpictures {
+    height: fit-content;
+}
+
 .container {
     display: flex;
     flex-direction: row;
