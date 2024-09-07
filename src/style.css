@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 20px;
 }
 .navbar {
     display: flex;
@@ -11,6 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #faf7f7;
+    margin-bottom: auto;
 }
 
 .navbar ul {
