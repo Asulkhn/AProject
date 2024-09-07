@@ -17,12 +17,12 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .navbar ul li {
     display: flex;
-    margin-right: 1opx;
+    margin-right: 10px;
 }
 .navbar ul li:hover {
     background-color: aqua;
