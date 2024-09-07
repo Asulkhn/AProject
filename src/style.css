@@ -28,10 +28,6 @@
     border-radius: 20%;
 }
 
-.bigpictures {
-    height: 50px;
-}
-
 .container {
     display: flex;
     flex-direction: row;
