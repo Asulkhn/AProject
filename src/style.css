@@ -1,8 +1,17 @@
-.h3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+html, body {
+    margin:0;
+    padding:0
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 .navbar {
     display: flex;
     position: static; /*position fixed makes the whole element go over the other element for static*/
@@ -12,6 +21,22 @@
     background-color: #faf7f7;
 }
 
+#sticky-wrap {
+    top:-115px;
+    background:red;
+    transition:1s all ease;
+  }
+  #sticky-wrap.stickyhead {
+    position: fixed;
+    position:-webkit-sticky;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    color:#fff;
+    padding: 3px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+  }
 .navbar ul {
     display: flex;
     flex-direction: row;
