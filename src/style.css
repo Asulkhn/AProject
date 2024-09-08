@@ -5,7 +5,7 @@
 }
 .navbar {
     display: flex;
-    position: static; /*position fixed makes the whole element go over the other element in mobile so i went for static*/
+    position: fixed; /*position fixed makes the whole element go over the other element in mobile so i went for static*/
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
