@@ -1,8 +1,6 @@
-  html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding-block-start: 12.5rem;
-  }
+.body {
+    padding-top: 150px;
+}
 
 .navbar {
     display: flex;
@@ -13,8 +11,6 @@
     right: 0;
     left: 0;
     z-index: 999;
-    gap: 1rem 2rem;
-    padding: 1.25rem 10vw;
     justify-content: space-between;
     background-color: #faf7f7;
 }
