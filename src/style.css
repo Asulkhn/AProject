@@ -17,22 +17,14 @@ html, body {
     position: fixed; /*position fixed makes the whole element go over the other element for static*/
     width: 100%;
     flex-direction: row;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
     justify-content: space-between;
     background-color: #faf7f7;
 }
 
-#sticky-wrap {
-    top:-115px;
-    transition:1s all ease;
-  }
-  #sticky-wrap.stickyhead {
-    position: fixed;
-    position:-webkit-sticky;
-    position:sticky;
-    top: 0;
-    padding: 3px;
-    width: 100%;
-  }
 .navbar ul {
     display: flex;
     flex-direction: row;
