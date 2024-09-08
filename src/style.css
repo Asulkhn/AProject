@@ -1,5 +1,5 @@
 .body {
-    padding-top: 500px;
+    padding-top: 150px;
 }
 
 .navbar {
@@ -10,7 +10,7 @@
     top: 0;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
     justify-content: space-between;
     background-color: #faf7f7;
 }
