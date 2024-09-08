@@ -13,6 +13,8 @@
     right: 0;
     left: 0;
     z-index: 999;
+    gap: 1rem 2rem;
+    padding: 1.25rem 10vw;
     justify-content: space-between;
     background-color: #faf7f7;
 }
