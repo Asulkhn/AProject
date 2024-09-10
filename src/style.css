@@ -1,16 +1,10 @@
-.body {
-    padding-top: 150px;
-}
-
 .navbar {
     display: flex;
-    position: fixed; /*position fixed makes the whole element go over the other element for static*/
+    position: fixed; /*position fixed overlaps.*/
     width: 100%;
     flex-direction: row;
     top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9999;
+    z-index: 9999; /*only fixes for PC.*/
     justify-content: space-between;
     background-color: #faf7f7;
 }
@@ -19,12 +13,10 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0;
 }
 
 .navbar ul li {
     display: flex;
-    margin-right: 10px;
 }
 .navbar ul li:hover {
     background-color: aqua;
@@ -57,6 +49,7 @@
 
 body {
     background-color: #faf7f7;
+    padding-top: 150px; /*doesn't fix overlap for mobile.*/
 }
 
 main {
