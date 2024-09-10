@@ -48,7 +48,7 @@
 }
 
 body {
-    background-color: #faf7f7;
+    background-image: url('junko-touhou-fumo.gif');
     padding-top: 150px; /*doesn't fix overlap for mobile.*/
 }
 
