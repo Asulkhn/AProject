@@ -3,13 +3,21 @@
 }
 .navbar {
     display: flex;
-    position: fixed; /*position fixed overlaps.*/
+    position: fixed;
     width: 100%;
     flex-direction: row;
     top: 0;
     z-index: 9999; /*only fixes for PC.*/
     justify-content: space-between;
     background-color: white;
+}
+
+.navbar.sticky ul li a{
+    color: white;
+}
+
+.navbar.sticky {
+    background-color: rgb(39, 131, 143);
 }
 
 .navbar ul {
@@ -20,10 +28,21 @@
 
 .navbar ul li {
     display: flex;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
 }
 .navbar ul li:hover {
     border-radius: 20%;
     background-color: aqua;
+}
+
+.navbar div a {
+    text-decoration: none;
+    color: black
 }
 
 .container {
