@@ -6,6 +6,7 @@
     top: 0;
     z-index: 9999; /*only fixes for PC.*/
     justify-content: space-between;
+    background-color: white;
 }
 
 .navbar ul {
@@ -19,6 +20,7 @@
 }
 .navbar ul li:hover {
     border-radius: 20%;
+    background-color: aqua;
 }
 
 .container {
