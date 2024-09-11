@@ -1,3 +1,6 @@
+.html {
+    height: 100%;
+}
 .navbar {
     display: flex;
     position: fixed; /*position fixed overlaps.*/
@@ -48,8 +51,22 @@
 }
 
 body {
-    background-image: url("Kaguya_Coffee.jpg");
-    padding-top: 150px; /*doesn't fix overlap for mobile.*/
+    /*background-image: url("junko-touhou-fumo.gif");*/
+    height: 100%;
+    padding-top: 150px;
+    background-repeat: no-repeat;
+}
+.bg {
+     /* The image used */
+  background-image: url("junko-touhou-fumo.gif");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
