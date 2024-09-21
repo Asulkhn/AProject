@@ -8,11 +8,12 @@
     flex-direction: row;
     top: 0;
     left: 0;
+    z-index: 3;
     justify-content: space-between;
     background-color: white;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
+    padding: 100px 100px;
 }
 .navbar.logo {
     position: relative;
@@ -47,6 +48,9 @@
 .navbar ul li:hover {
     border-radius: 20%;
     background-color: aqua;
+    transform: scale(1.07); /* Увеличение размера элемента на 7% при наведении */
+    transition: 0.4s ease; /* Плавный переход эффекта с продолжительностью 0.4 секунды */
+    border-radius: 5%;
 }
 
 .navbar div {
@@ -94,7 +98,7 @@ body {
 }
 .bg {
      /* The image used */
-  background-image: url("touhou.gif");
+  background-image: url("junko-touhou-fumo.gif");
 
   /* Full height */
   height: 100%;
@@ -215,6 +219,10 @@ footer a {
     margin-right: 10px;
 }
 
+.burger {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .container {
         display: flex;
@@ -229,6 +237,90 @@ footer a {
         margin: 0;
     }
 
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-left: 20px;
+    }
+
+    .burger span{
+        position: absolute;
+        width: 30px;
+        left: 5px;
+        height: 3px;
+        background-color: black;
+        bottom: 20px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+
+    .burger span:nth-child(3) {
+        transform: translateY(10px);
+    }
+    /* Стили для списка навигационного меню */
+    .navbar ul {
+        position: absolute; /* Абсолютное позиционирование относительно ближайшего позиционированного предка, в нашем случае экрана. */
+        flex-direction: column; /* Элементы списка будут выстраиваться вертикально (необходимо для флекс-контейнера) */
+        width: 30%; /* Ширина списка равна 30% от ширины родительского элемента */
+        height: auto; /* Высота автоматически подстраивается под содержимое */
+        top: 68px; /* Расположение списка на 68px ниже от верхнего края родительского элемента */
+        left: -40%; /* Расположение списка на 40% ширины родительского элемента слева (вне видимой области) */
+        z-index: 2; /* Уровень стека элемента, чтобы он перекрывал другие элементы с меньшим z-index */
+    }
+
+/* Стили для элементов списка внутри навигационного меню */
+    .navbar ul li {
+        margin-top: 10px; /* Отступ сверху для элементов списка */
+    }
+
+/* Стили для элемента списка при наведении */
+    .navbar ul li:hover { /* Цвет фона элемента становится черным при наведении */
+        background-color: black;
+        transform: scale(1.07); /* Увеличение размера элемента на 7% при наведении */
+        transition: 0.4s ease; /* Плавный переход эффекта с продолжительностью 0.4 секунды */
+        border-radius: 5%; /* Закругление углов элемента на 5% */
+    }
+
+/* Стили для ссылок в элементах списка при наведении */
+    .navbar ul li a:hover {
+        color: white; /* Цвет текста ссылки становится белым при наведении */
+    } 
+    .navbar ul li:nth-child(1) {
+        margin-top: 20px; /* Увеличение отступа сверху для первого элемента списка */
+    }
+    
+    /* Стили для ссылок внутри элементов списка */
+    .navbar ul li a {
+        margin-left: 0; /* Установка нулевого отступа слева для ссылок */
+        font-size: 1.2rem; /* Установка размера шрифта в 1.2rem */
+    }
+    
+    /* Стили для навигационного меню при открытом состоянии */
+    .navbar.open ul {
+        transform: translateX(100%); /* Перемещение меню на 100% ширины вправо (выдвигается за пределы видимой области) */
+        transition: 0.7s ease-in-out; /* Плавный переход эффекта с продолжительностью 0.7 секунды */
+    }
+    
+    /* Стили для первой полоски бургер-меню при открытом состоянии */
+    .navbar.open .burger span:nth-child(1) {
+        transform: translateY(0) rotate(45deg); /* Поворачивает первую полоску на 45 градусов и возвращает в исходное положение по вертикали */
+    }
+    
+    /* Стили для второй полоски бургер-меню при открытом состоянии */
+    .navbar.open .burger span:nth-child(2) {
+        opacity: 0; /* Делает вторую полоску полностью прозрачной (не видимой) */
+    }
+    
+    /* Стили для третьей полоски бургер-меню при открытом состоянии */
+    .navbar.open .burger span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg); /* Поворачивает третью полоску на -45 градусов и возвращает в исходное положение по вертикали */
+    }
+    
     .person p {
         margin-top: 5px;
         margin-bottom: 10px;
