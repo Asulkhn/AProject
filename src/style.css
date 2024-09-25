@@ -89,6 +89,9 @@
     transition: 0.5s ease;
     box-shadow: 10px 10px 5px #7cc6e5;
 }
+.entry {
+     margin-right: 100px;
+}
 
 body {
     /*background-image: url("junko-touhou-fumo.gif");*/
@@ -390,4 +393,35 @@ footer a {
         height: 200px;
         margin: auto;
     }
+}
+.navbar ul .work {
+    position: relative; /* Set the position to relative to enable absolute positioning of its child elements */
+    display: flex; /* Use flexbox for layout */
+    z-index: 10; /* Set stacking order */
+}
+
+.navbar ul .work ul {
+    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+    flex-direction: column; /* Arrange children in a column */
+    left: 0; /* Align the left edge of the dropdown with the parent */
+    top: 100%; /* Position the top of the dropdown just below the parent */
+    width: 100px; /* Set a fixed width for the dropdown */
+    display: none; /* Initially hide the dropdown */
+    padding: 0; /* Remove default padding */
+    z-index: 20; /* Set a higher stacking order for the dropdown */
+}
+
+.navbar ul .work ul li {
+    z-index: 20; /* Ensure list items have the same stacking order as the parent */
+    background-color: #7cc6e5; /* Set background color */
+    margin-bottom: 2px; /* Add space between items */
+}
+
+.navbar ul .work:hover ul {
+    display: block; /* Show the dropdown when hovering over the parent */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: white; /* Change background color on hover */
+    border-radius: 0; /* Remove border radius */
 }
