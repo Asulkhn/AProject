@@ -13,10 +13,10 @@
     background-color: white;
     align-items: center;
     transition: 0.6s;
-    padding: 100px 100px;
+    padding: 30px 30px;
 }
 .navbar.logo {
-    position: relative;
+    position: absolute;
     transition: 0.6s;
 } 
 
@@ -122,7 +122,7 @@ body {
  /* Center and scale the image nicely */
  background-position: center;
  background-repeat: no-repeat;
- background-size: contain;
+ background-size: cover;
 }
 
 main {
@@ -358,9 +358,11 @@ footer a {
         flex-direction: column; /* Элементы списка будут выстраиваться вертикально (необходимо для флекс-контейнера) */
         width: 30%; /* Ширина списка равна 30% от ширины родительского элемента */
         height: auto; /* Высота автоматически подстраивается под содержимое */
-        top: 68px; /* Расположение списка на 68px ниже от верхнего края родительского элемента */
+        top: 94px; /* Расположение списка на 68px ниже от верхнего края родительского элемента */
         left: -40%; /* Расположение списка на 40% ширины родительского элемента слева (вне видимой области) */
         z-index: 2; /* Уровень стека элемента, чтобы он перекрывал другие элементы с меньшим z-index */
+        justify-content: end;
+        background-color: aqua;
     }
 
 /* Стили для элементов списка внутри навигационного меню */
