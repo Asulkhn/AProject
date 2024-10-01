@@ -18,6 +18,9 @@
 .navbar.logo {
     position: absolute;
     transition: 0.6s;
+}
+.forlogo {
+    margin-right: 40px;
 } 
 
 .navbar.sticky ul li a{
@@ -26,7 +29,7 @@
 
 .navbar.sticky {
     background-color: rgb(39, 131, 143);
-    padding: 5px 100px;
+    padding: 6px 100px;
 }
 
 .navbar ul {
@@ -311,7 +314,72 @@ footer a {
     background-color: #91130c; /* Change the background color of the button on hover */
     color: rgb(248, 243, 243); /* Change the text color of the button on hover */
 }
+.math {
+    display: flex;
+}
+.math form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+.math form fieldset {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.math form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.math form fieldset .counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
+.math form fieldset .counters div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.math form fieldset .counters div label, input {
+    margin: auto;
+    text-align: center;
+}
+.math form fieldset .counters div input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: black;
+}
+.math form fieldset .butcont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.math form fieldset .butcont button {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+.math form fieldset p {
+    display: flex;
+    margin: 0;
+}
+.math form fieldset p span {
+    margin: auto;
+    font-size: 1.2rem;
+}
 
 @media (max-width: 700px) {
     .container {
@@ -397,6 +465,10 @@ footer a {
         transform: translateX(100%); /* Перемещение меню на 100% ширины вправо (выдвигается за пределы видимой области) */
         transition: 0.7s ease-in-out; /* Плавный переход эффекта с продолжительностью 0.7 секунды */
     }
+    .navbar.goup ul {
+        transform: translate(100%,-30%);
+        transition: 0.7s ease-in-out;
+    }
     
     /* Стили для первой полоски бургер-меню при открытом состоянии */
     .navbar.open .burger span:nth-child(1) {
@@ -471,6 +543,9 @@ footer a {
         width: 95%;
         height: auto;
     }
+    .math form fieldset {
+        width: 70%;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -515,3 +590,4 @@ footer a {
     }
     
 }
+
