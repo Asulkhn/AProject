@@ -120,7 +120,6 @@ body {
 
  /* Full height */
  height: 100%;
- width: max-content;
 
  /* Center and scale the image nicely */
  background-position: center;
@@ -371,6 +370,10 @@ footer a {
     box-sizing: border-box;
     height: 40px;
     margin: auto;
+}
+.math form fieldset .butcont button:hover {
+    background-color: #128bd1;
+    transition: 0.7s ease;
 }
 .math form fieldset p {
     display: flex;
