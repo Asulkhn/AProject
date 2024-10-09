@@ -1,5 +1,9 @@
-.html {
-    height: 100%;
+html
+{
+  background-image: url('barotrauma-fumo.gif');
+  background-repeat: no-repeat;
+  min-height:100%;
+  background-size: cover;
 }
 .navbar {
     display: flex;
@@ -102,30 +106,7 @@ body {
     padding-top: 150px;
     background-repeat: no-repeat;
 }
-.bg {
-     /* The image used */
-  background-image: url("junko-touhou-fumo.gif");
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg1 {
-    /* The image used */
- background-image: url("barotrauma-fumo.gif");
-
- /* Full height */
- height: 100%;
-
- /* Center and scale the image nicely */
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
 
 main {
     background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(226,237,233,0.72) 37%, rgba(208,238,243,1) 100%);
