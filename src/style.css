@@ -533,6 +533,24 @@ footer a {
     .math form fieldset {
         width: 70%;
     }
+    .API .Tokyo {
+        width: 100%;
+    }
+    .API .Petro {
+        width: 100%;
+    }
+    .API .Tucson {
+        width: 100%;
+    }
+    .API .Petro span {
+        font-size: 1.05rem;
+    }
+    .API .Tucson span {
+        font-size: 1.05rem;
+    }
+    .API .Tokyo span {
+        font-size: 1.05rem;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -576,5 +594,69 @@ footer a {
         color: black; /* Set text color to black when hovering over the parent */
     }
     
+}
+@media (max-width: 1200px) {
+    .API {
+        display: flex;
+        flex-direction: column;
+    }
+    .API .Petro {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .API .Petro img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .API .Tokyo {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .API .Tokyo img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+    .API .Tucson {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .API .Tucson img, span {
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    .API .Petro img {
+        border-radius: 8px;
+    }
+    .API .Tucson img {
+        border-radius: 8px;
+    }
+    .API .Tokyo img {
+        border-radius: 8px;
+    }
+    .API .Petro span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .API .Tucson span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
 

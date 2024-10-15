@@ -46,7 +46,7 @@ function calculus(mark) {
 
 }
 function calcul(mark) {
-  let num = parseFloat(the.value) || 0;
+  const num3 = parseFloat(the.value) || 0;
   num = (num3 * Math.PI) / 180;
   switch(mark) {
     case "sin":
