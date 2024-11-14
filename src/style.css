@@ -366,6 +366,7 @@ footer a {
 }
 
 @media (max-width: 700px) {
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -533,6 +534,7 @@ footer a {
     .math form fieldset {
         width: 70%;
     }
+    
     .API .Tokyo {
         width: 100%;
     }
@@ -542,6 +544,12 @@ footer a {
     .API .Tucson {
         width: 100%;
     }
+    .API .Saratov {
+        width: 100%;
+    }
+    .API .Zhytomyr {
+        width: 100%;
+    }
     .API .Petro span {
         font-size: 1.05rem;
     }
@@ -549,6 +557,12 @@ footer a {
         font-size: 1.05rem;
     }
     .API .Tokyo span {
+        font-size: 1.05rem;
+    }
+    .API .Saratov span {
+        font-size: 1.05rem;
+    }
+    .API .Zhytomyr span {
         font-size: 1.05rem;
     }
 }
@@ -594,45 +608,107 @@ footer a {
         color: black; /* Set text color to black when hovering over the parent */
     }
     
+    
 }
-@media (max-width: 1200px) {
+
     .API {
         display: flex;
         flex-direction: column;
     }
     .API .Petro {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
         width: 70%;
         margin: auto;
         margin-bottom: 40px;
         padding-top: 20px;
     }
-
+    .API .Petro a {
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
     .API .Petro img, span {
         margin: auto;
         width: 50%;
         height: auto;
     }
+    .API a {
+        padding-left: 550px;
+    }
 
     .API .Tokyo {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
         width: 70%;
         margin: auto;
         margin-bottom: 40px;
     }
+    .API .Tokyo a{
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
     .API .Tokyo img, span {
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
+    .API .Saratov {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .API .Saratov a{
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
+    .API .Saratov img, span {
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
+    .API .Zhytomyr {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .API .Zhytomyr a{
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
+    }
+    .API .Zhytomyr img, span {
         margin: auto;
         width: 50%;
         height: auto;
     }
     .API .Tucson {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
         width: 70%;
         margin: auto;
         margin-bottom: 40px;
+    }
+    .API .Tucson a{
+        padding-left: 20px;
+        width: 50%;
+        height: auto;
     }
     .API .Tucson img, span {
         margin: auto;
@@ -658,5 +734,5 @@ footer a {
         text-align: center;
         font-size: 1.2rem;
     }
-}
+
 
